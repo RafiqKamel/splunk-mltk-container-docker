@@ -75,6 +75,6 @@ RUN chmod g+w /etc/passwd
 USER 1001
 
 # Expose container port 5000 (MLTK Container Service) and 8888 (Notebook)
-EXPOSE 5000 8888 8089
+EXPOSE 5000 8089
 # Define bootstrap as entry point to start container
 ENTRYPOINT ["/dltk/bootstrap_fast.sh"]
